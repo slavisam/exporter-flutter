@@ -1,7 +1,7 @@
 {
   "id": "dev.ednet.flutter-exporter",
-  "name": "Custom Flutter exporter",
-  "description": "Flutter token and style exporter",
+  "name": "Flutter exporter - Props to Maps",
+  "description": "As Flutter does not have access to reflection, it is easier to handle maps of generics for writing any type of engine.",
   "source_dir": "src",
   "version": "0.0.1",
   "tags": [
