@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppBorders {
-  static const Map<String, Color> valueMap = {
+  static const Map<String, Border> valueMap = {
 
 {[ let brand = ds.currentBrand() /]}
 {[ const borderTokensTree = ds.tokenGroupTreeByType("Border", brand.id) /]}

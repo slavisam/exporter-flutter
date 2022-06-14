@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppGradients {
-  static const Map<String, Color> valueMap = {
+  static const Map<String, Gradient> valueMap = {
 
 {[ let brand = ds.currentBrand() /]}
 {[ const gradientTokensTree = ds.tokenGroupTreeByType("Gradient", brand.id) /]}

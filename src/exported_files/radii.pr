@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppRadii {
-  static const Map<String, Color> valueMap = {
+  static const Map<String, BorderRadius> valueMap = {
 
 {[ let brand = ds.currentBrand() /]}
 {[ const radiusTokensTree = ds.tokenGroupTreeByType("Radius", brand.id) /]}

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppTextStyles {
-  static const Map<String, Color> valueMap = {
+  static const Map<String, TextStyle> valueMap = {
 
 {[ let brand = ds.currentBrand() /]}
 {[ const typographyTokensTree = ds.tokenGroupTreeByType("Typography", brand.id) /]}
