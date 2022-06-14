@@ -17,7 +17,7 @@ class AppRadii {
   "{{ fullTokenName }}": BorderRadius.all(Radius.circular({[ inject "export_measure_value" context radiusToken.value.radius /]})),
 
   {[/]}
-{[/]};
+{[/]}
   };
 
   AppRadii._();

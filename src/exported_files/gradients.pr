@@ -28,7 +28,7 @@ class AppGradients {
   {[ inject "export_color_value" context stop.color /]},
   {[/]}
     ],
-  );
+  ),
 
   {[/]}
 {[/]}

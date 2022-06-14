@@ -12,7 +12,7 @@ class AppDimensions {
   {[ if (measureToken.description && measureToken.description !== "") ]}
 {{ createDocumentationComment(measureToken.description, "  ") }}
   {[/]}
-  "{{ fullTokenName }}": {[ inject "export_measure_value" context measureToken.value /]};
+  "{{ fullTokenName }}": {[ inject "export_measure_value" context measureToken.value /]},
 
   {[/]}
 {[/]}

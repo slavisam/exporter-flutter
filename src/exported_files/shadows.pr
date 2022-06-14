@@ -19,7 +19,7 @@ class AppShadows {
     offset: Offset({{ shadowToken.value.x.measure.toString() }}, {{ shadowToken.value.y.measure.toString() }}),
     blurRadius: {{shadowToken.value.radius.measure.toString()}},
     spreadRadius: {{shadowToken.value.spread.measure.toString()}},
-  );
+  ),
 
   {[/]}
 {[/]}
