@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppShadows {
+  static const Map<String, Color> valueMap = {
 
 {[ let brand = ds.currentBrand() /]}
 {[ const shadowTokensTree = ds.tokenGroupTreeByType("Shadow", brand.id) /]}
@@ -13,7 +14,7 @@ class AppShadows {
   {[ if (shadowToken.description && shadowToken.description !== "") ]}
 {{ createDocumentationComment(shadowToken.description, "  ") }}
   {[/]}
-  static const {{ fullTokenName }} = BoxShadow(
+  "{{ fullTokenName }}": BoxShadow(
     color: {[ inject "export_color_value" context shadowToken.value.color /]},
     offset: Offset({{ shadowToken.value.x.measure.toString() }}, {{ shadowToken.value.y.measure.toString() }}),
     blurRadius: {{shadowToken.value.radius.measure.toString()}},
@@ -22,5 +23,7 @@ class AppShadows {
 
   {[/]}
 {[/]}
+  };
+
   AppShadows._();
 }

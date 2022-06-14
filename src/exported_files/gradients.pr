@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppGradients {
+  static const Map<String, Color> valueMap = {
 
 {[ let brand = ds.currentBrand() /]}
 {[ const gradientTokensTree = ds.tokenGroupTreeByType("Gradient", brand.id) /]}
@@ -14,7 +15,7 @@ class AppGradients {
 {{ createDocumentationComment(gradientToken.description, "  ") }}
   {[/]}
   {[ log gradientToken /]}
-  static const {{ fullTokenName }} = LinearGradient(
+  "{{ fullTokenName }}": LinearGradient(
     begin: {[ inject "export_point" context gradientToken.value.from /]},
     end: {[ inject "export_point" context gradientToken.value.to /]},
     stops: [
@@ -31,5 +32,7 @@ class AppGradients {
 
   {[/]}
 {[/]}
+  };
+
   AppGradients._();
 }
