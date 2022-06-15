@@ -34,5 +34,5 @@ class EdsAppGradients {
 {[/]}
   };
 
-  AppGradients._();
+  EdsAppGradients._();
 }

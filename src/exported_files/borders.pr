@@ -23,5 +23,5 @@ class EdsAppBorders {
 {[/]}
   };
 
-  AppBorders._();
+  EdsAppBorders._();
 }
