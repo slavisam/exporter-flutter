@@ -1,6 +1,6 @@
 {
   "id": "dev.ednet.flutter-exporter",
-  "name": "Flutter exporter - Props to Maps",
+  "name": "EDNet Studio Exporter",
   "description": "As Flutter does not have access to reflection, it is easier to handle maps of generics for writing any type of engine.",
   "source_dir": "src",
   "version": "0.0.1",
@@ -10,7 +10,7 @@
     "Tokens",
     "Styles"
   ],
-  "author": "Slavisa Markovic",
+  "author": "Supernova community & Slavisa Markovic",
   "organization": "EDNet.dev",
   "homepage": "https://ednet.dev",
   "usesBrands": true,
