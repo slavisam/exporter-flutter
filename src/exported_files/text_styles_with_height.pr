@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-class AppTextStyles {
-  static const Map<String, TextStyle> valueMap = {
+class AppTextStylesWithHeight {
 
 {[ let brand = ds.currentBrand() /]}
 {[ const typographyTokensTree = ds.tokenGroupTreeByType("Typography", brand.id) /]}
@@ -26,31 +26,30 @@ class AppTextStyles {
       {[ set decoration = "lineThrough" /]}
   {[/]}
   {[ let letterSpacing = typographyToken.value.letterSpacing.measure /]}
+  {[ const fontSize = typographyToken.value.fontSize.measure /]}
   {[ if typographyToken.value.letterSpacing.unit.equals("Percent") ]}
-    {[ const fontSize = typographyToken.value.fontSize.measure /]}
     {[ set letterSpacing = (fontSize / 100 * letterSpacing) /]}
+  {[/]}
+  {[ let lineHeight = "null" /]}
+  {[ if (typographyToken.value.lineHeight != null) ]}
+    {[ lineHeight = (typographyToken.value.lineHeight.measure / fontSize) /]}
+    {[ if typographyToken.value.lineHeight.unit.equals("Percent") ]}
+      {{ typographyToken.value.lineHeight.unit }}
+      {[ lineHeight = (fontSize / 100 * lineHeight / fontSize) /]}
+    {[/]}
   {[/]}
   {[ if (typographyToken.description && typographyToken.description !== "") ]}
 {{ createDocumentationComment(typographyToken.description, "  ") }}
   {[/]}
-  "{{ fullTokenName }}": TextStyle(
-    fontFamily: "{{ typographyToken.value.font.family }}",
+  final {{ fullTokenName }} = GoogleFonts.{{ googleFontName }}(
     fontWeight: FontWeight.w{{ ds.fontWeight(typographyToken.value.font) }},
     fontStyle: FontStyle.{{ fontStyle }},
     fontSize: {[ inject "export_measure_value" context typographyToken.value.fontSize /]},
     decoration: TextDecoration.{{ decoration }},
     letterSpacing: {{ letterSpacing.toString() }},
-  ),
-  "{{ fullTokenNAme }}Google": GoogleFonts.{{ googleFontName }}(
-    fontWeight: FontWeight.w{{ ds.fontWeight(typographyToken.value.font) }},
-    fontStyle: FontStyle.{{ fontStyle }},
-    fontSize: {[ inject "export_measure_value" context typographyToken.value.fontSize /]},
-    decoration: TextDecoration.{{ decoration }},
-    letterSpacing: {{ letterSpacing.toString() }},
-  ),
+    height: {{ lineHeight.toString() }},
+  );
+
   {[/]}
 {[/]}
-  };
-
-  AppTextStyles._();
 }
