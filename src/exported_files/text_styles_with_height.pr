@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class AppTextStylesWithHeight {
+class EdsAppTextStylesWithHeight {
+  static const Map<String, TextStyle> valueMap = {
 
 {[ let brand = ds.currentBrand() /]}
 {[ const typographyTokensTree = ds.tokenGroupTreeByType("Typography", brand.id) /]}
@@ -41,15 +42,17 @@ class AppTextStylesWithHeight {
   {[ if (typographyToken.description && typographyToken.description !== "") ]}
 {{ createDocumentationComment(typographyToken.description, "  ") }}
   {[/]}
-  final {{ fullTokenName }} = GoogleFonts.{{ googleFontName }}(
+  "{{ fullTokenName }}": GoogleFonts.{{ googleFontName }}(
     fontWeight: FontWeight.w{{ ds.fontWeight(typographyToken.value.font) }},
     fontStyle: FontStyle.{{ fontStyle }},
     fontSize: {[ inject "export_measure_value" context typographyToken.value.fontSize /]},
     decoration: TextDecoration.{{ decoration }},
     letterSpacing: {{ letterSpacing.toString() }},
     height: {{ lineHeight.toString() }},
-  );
+  ),
 
   {[/]}
 {[/]}
+    };
+
 }
