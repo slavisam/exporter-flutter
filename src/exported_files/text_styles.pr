@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AppTextStyles {
+class EdsAppTextStyles {
   static const Map<String, TextStyle> valueMap = {
 
 {[ let brand = ds.currentBrand() /]}
@@ -52,5 +52,5 @@ class AppTextStyles {
 {[/]}
   };
 
-  AppTextStyles._();
+  EdsAppTextStyles._();
 }

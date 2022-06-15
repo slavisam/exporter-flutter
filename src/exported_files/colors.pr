@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AppColors {
+class EdsAppColors {
   static const Map<String, Color> valueMap = {
 
 {[ let brand = ds.currentBrand() /]}
@@ -20,5 +20,5 @@ class AppColors {
 {[/]}
   };
 
-  AppColors._();
+  EdsAppColors._();
 }

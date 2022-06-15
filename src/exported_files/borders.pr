@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AppBorders {
+class EdsAppBorders {
   static const Map<String, Border> valueMap = {
 
 {[ let brand = ds.currentBrand() /]}
@@ -23,5 +23,5 @@ class AppBorders {
 {[/]}
   };
 
-  AppBorders._();
+  EdsAppBorders._();
 }

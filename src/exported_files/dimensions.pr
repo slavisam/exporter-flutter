@@ -1,4 +1,4 @@
-class AppDimensions {
+class EdsAppDimensions {
   static const Map<String, String> valueMap = {
 
 {[ let brand = ds.currentBrand() /]}
@@ -18,5 +18,5 @@ class AppDimensions {
 {[/]}
   };
 
-  AppDimensions._();
+  EdsAppDimensions._();
 }

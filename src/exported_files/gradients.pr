@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AppGradients {
+class EdsAppGradients {
   static const Map<String, Gradient> valueMap = {
 
 {[ let brand = ds.currentBrand() /]}
@@ -34,5 +34,5 @@ class AppGradients {
 {[/]}
   };
 
-  AppGradients._();
+  EdsAppGradients._();
 }

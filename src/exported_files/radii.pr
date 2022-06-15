@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AppRadii {
+class EdsAppRadii {
   static const Map<String, BorderRadius> valueMap = {
 
 {[ let brand = ds.currentBrand() /]}
@@ -20,5 +20,5 @@ class AppRadii {
 {[/]}
   };
 
-  AppRadii._();
+  EdsAppRadii._();
 }
