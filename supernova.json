@@ -8,6 +8,6 @@
   "designSystemName": "EDNet Design sysytem",
   "designSystemVersionName": "Init",
   "exporterName": "Custom Flutter exporter",
-  "write_to": "/design_system",
+  "write_to": "/lib/supernova",
   "description": "Note to our fellow developers: Install Supernova integration from the VSCode marketplace and then our  Custom Flutter exporter exporter will synchronize design data and generate appropriate code from the  Init design system every time you request it through the extension interface, fully automatically."
 }
