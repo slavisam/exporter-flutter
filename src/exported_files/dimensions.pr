@@ -1,5 +1,5 @@
 class EdsAppDimensions {
-  static const Map<String, String> valueMap = {
+  static const Map<String, num> valueMap = {
 
 {[ let brand = ds.currentBrand() /]}
 {[ const measureTokensTree = ds.tokenGroupTreeByType("Measure", brand.id) /]}
