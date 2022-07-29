@@ -3,7 +3,7 @@
   "name": "EDNet Studio Exporter",
   "description": "As Flutter does not have access to reflection, it is easier to handle maps of generics for writing any type of engine.",
   "source_dir": "src",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "tags": [
     "Flutter",
     "Dart",
