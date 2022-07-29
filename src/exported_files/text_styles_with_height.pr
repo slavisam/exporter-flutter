@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class EdsAppTextStylesWithHeight {
-  static const Map<String, TextStyle> valueMap = {
+  static Map<String, TextStyle> valueMap = {
 
 {[ let brand = ds.currentBrand() /]}
 {[ const typographyTokensTree = ds.tokenGroupTreeByType("Typography", brand.id) /]}
